@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #51C7E1;
+    --secondary-color : #0B191E;
+    --accent1-color : #FCA311;
+    --accent2-color : #FFDEC2;
+
+    --secondary-color-transparent: #0b191e8c;
+    --accent1-color-transparent : #2f8194;
+}
+
+/* Body */
+/* main {
+    background-color: var(--accent1-color-transparent);
+} */
+
+/* Text style, decorations */
+
+h1, h2 {
+    font-family: Open Sans;
+}
+
+p {
+    text-align: justify;
+    font-family: var(--secondary-color);
+
+    /* google font */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+a {
+    text-decoration: none;
+}
+
+
+/* Hero container elements positionning and else */
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--accent1-color);
+}
+
+.hero article {
+    display: block;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    color: var(--accent1-color);
+    background-color: var(--secondary-color-transparent);
+}
+
+.hero article img {
+    width: 150px;
+    float: right;
+    margin-left: 20px;
+}
+
+/* Adventure awaits you pictures */
+/* .rafting-pics {
+    max-width: 200px;
+} */
+
+/* Sections of the body */
+
+section {
+    display: block;
+    margin: 20px 15%;
+}
+
+section img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Footer */
+
+footer {
+    height: 50px;
+}
+
+.sociallinks img {
+    display: inline-block;
+    height: 15px;
+    margin: 0 40px;
+}
