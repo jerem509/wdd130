@@ -6,29 +6,56 @@
 
 :root {
     --color-darkblue: darkblue;
+    --color-lightblue: rgb(32, 119, 201);
+    --color-white: white;
     --border: 1px solid rgb(0 0 0 / 0.2);
     /* --font-size: 1rem; */
 }
 
+/* Page structure */
+header, footer, .grid {
+    max-width: 840px;
+}
+
+
+/* Header strutcture*/
 nav {
     background-color: var(--color-darkblue);
-    padding: 10px;
+    padding: 5px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
+    color: var(--color-white);
     display: block;
-    padding: 20px;
+    padding: 5px;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+/* Body structure */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
 
 h1 {
     color: var(--color-darkblue);
     padding: 1rem;
+    border-bottom: 2px solid var(--color-darkblue);
+    margin-bottom: 1rem;
 }
 
 main {
-    max-width: 840px;
+    /* max-width: 840px; */
+    grid-column: 2/3;
+    /* grid-row: 1/2; */
 }
 
 main img {
@@ -42,20 +69,18 @@ main img {
 }
 
 aside {
-    width: 240px;
+    max-width: 240px;
     text-align: center;
     position: relative;
-    /* margin: 15px;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 5px;
-    background-color: #eee;
-    color: #333; */
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 25px;
+    font-size: 1.2rem;
 }
 
 aside img {
@@ -71,8 +96,10 @@ p {
     padding: 0;
 }
 
+/* Footer structure */
 footer {
     margin-top: 15px;
+    padding: .5rem;
     border-top: var(--border);
     text-align: center;
 }
