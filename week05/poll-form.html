@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD130 | HTML Form - User Poll</title>
+    <meta name="author" content="Jonel Charles">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset id="contact">
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname">
+                </div>
+                <div class="form-item  column2">
+                    <label for="useremail">User email:</label>
+                    <input type="email" id="useremail">
+                </div>
+            </fieldset>
+
+            <fieldset id="questions">
+                <legend>Questions</legend>
+
+                <div class="form-item column1" id="questn1">
+                    <label for="fav_browser">What is your favorite internet browser:</label>
+                    <select name="fav_browser" id="fav_browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="opera">Opera</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1" id="questn2">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div id="questn3">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea name="feedback" id="feedback" rows="5" placeholder="Jeremie, Bonbon, Chambellan..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button> 
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;2025 | HTML Form - User Poll Activity | Jonel Charles</p>
+    </footer>
+</body>
+</html>

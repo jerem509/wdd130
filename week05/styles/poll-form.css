@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    background-color: #fff;
+    height: 100vh;
+    width: 650px;
+}
+
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+
+/* text */
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+legend {
+    color: navy;
+    font-size: 1.2em;
+    padding: 0.5rem;
+}
+
+label {
+    color: rgb(66, 66, 66);
+    text-align: right;
+    padding: 0.5rem;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* other elements */
+
+main {
+    padding: 0 20px;
+}
+
+form {
+    max-width: 840px;
+    margin: 0 auto;
+    padding:1rem;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    background-color: rgb(236, 233, 233);
+    display: grid;
+    grid-template-rows: repeat(2, auto) auto;
+    gap: 10px;
+}
+
+fieldset {
+    display: grid;
+    padding: 15px;
+    margin: 1rem;
+    border: 1px solid rgba(177, 173, 173, 0.89);
+    gap: 5px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns:1fr 2fr;
+    justify-items:end;
+}
+
+#questn3 {
+    display:grid;
+    grid-template: 1fr auto/1fr;
+    justify-items: center;
+}
+
+input, select, textarea {
+    padding: 3px;
+    font-size: 1.1rem;
+}
+
+textarea {
+    width: 100%;  
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: auto;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 150px;
+    justify-self: center;
+    background-color: navy;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
