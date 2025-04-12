@@ -648,7 +648,7 @@ button:hover {
     text-transform: uppercase;
 }
 
-.trips-type h2 {
+.trips-type>h2 {
     font-size: 23px;
 }
 
