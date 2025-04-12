@@ -9,7 +9,11 @@
     --primary-color : #ffffff;
     --secondary-color : #000000;
     --accent1-color : #FCA311;
+    --accent1-color-light: #f8b90dad;
+    --bg-color-yellow: rgb(255, 238, 3);
     --accent2-color : #2C5784;
+    --accent2-color-true: #034286;
+    --accent2-color-darker : #01162c;
     --accent2-color-transparent : #2c5784b2;
     --bg-color1-platinum: #E5E5E5;
 
@@ -23,6 +27,9 @@
 
     /* box shadows */
     --shadow-of-container: 1px 1px 5px var(--accent2-color);
+    --shadow-of-container-yellow: 1px 1px 5px var(--accent1-color);
+    --shadow-of-container-type2: 0 1px 5px gray;
+
 
     /* image corner shape */
     --border-shape: 5px;
@@ -262,7 +269,24 @@ footer img:hover{
 }
 
 
-/* Contact Us page */
+/* || Contact Us page */
+
+/* Typography */
+label, legend {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.purpose-label, p{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#adress > h2 {
+    color: var(--accent2-color);
+}
+
+/* Happy employee pictures */
 #emplo-pics {
     margin-top: 1rem;
     display: grid;
@@ -305,6 +329,8 @@ footer img:hover{
     background-color: var(--accent2-color-transparent);
 }
 
+
+/* Banner title Contact Us formatting */
 #banner-contact-us {
     width: 100%;
     height: 4rem;
@@ -320,22 +346,10 @@ footer img:hover{
     align-items: center;
 }
 
+
+/* Form formatting */
 fieldset {
     border: none;
-}
-
-label, legend {
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.purpose-label, p{
-    font-weight: 400;
-    font-size: 1em;
-}
-
-h2 {
-    color: var(--accent2-color);
 }
 
 fieldset input, textarea {
@@ -374,34 +388,9 @@ fieldset input, textarea {
     justify-self: end;
 }
 
-.iframe-container {
-    width: 100%;
-    min-width: 200px;
-    height: 90%;
-    min-height: 130px;
-    margin-bottom: 1rem;
-    grid-row: -3/-2;
-    align-self: self-end;
-
-    position: relative;
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 100%;
-    border: 0;
-  }
-
-#adress {
-    grid-row: -2/-1;
-}
-
 #usr-name {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     gap: 4rem;
 }
 
@@ -432,4 +421,353 @@ button {
     border: 1px solid var(--accent2-color);
     padding: 0.8rem;
     border-radius: var(--border-shape);
+}
+
+/* Adress of the company section */
+
+/* Google map item formatting */
+.iframe-container {
+    width: 100%;
+    min-width: 200px;
+    height: 90%;
+    min-height: 130px;
+    margin-bottom: 1rem;
+    grid-row: -3/-2;
+    align-self: self-end;
+
+    position: relative;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    border: 0;
+  }
+
+#adress {
+    grid-row: -2/-1;
+}
+
+
+/*|| Home Page CSS */
+
+/* #homepage-main {
+    background-color: rgb(247, 238, 224);
+} */
+
+/* Homepage Typography */
+#msg-headn > h1 {
+    position: relative;
+    font-size: 3rem;
+    color: var(--accent2-color);
+}
+
+#msg-headn span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--accent2-color);
+}
+
+p {
+    /* text-transform: ; */
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* | Hero section | */
+#hero-homepage {
+    width: 100%;
+    position: relative;
+}
+
+#hero-homepage img {
+    border: 0;
+}
+
+#msg-exc {
+    border-bottom: 0;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    bottom: 2rem;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: end;
+    gap: 3rem;
+    /* border: 1px solid black; */
+}
+
+#msg-exc button {
+    justify-self: center;
+    margin-bottom: 6px;
+}
+
+#msg-headn {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: left;
+}
+
+.blur-bottom-hero-banner {
+    position: absolute;
+    bottom: -30px;
+    /* border: 1px solid green; */
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(to top, 
+        white, 
+        rgba(255, 255, 255, 0.601),
+        rgba(255, 255, 255, 0.303),
+        rgba(255, 255, 255, 0.1));
+    z-index: 2;
+}
+
+/* Instructions sections */
+#instr {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: .2rem; */
+}
+
+#instr img {
+    border-radius: 1.4rem;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    padding: 1rem;
+    margin: 1rem 0;
+    align-self: center;
+}
+
+.instr-sections{
+    display: grid;
+    grid-template-columns: 3rem 1fr 2rem 1fr 3rem;
+    grid-template-rows: 3rem 1fr 2rem 1fr 3rem;
+    padding: 1rem;
+    /* align-items: center; */
+    justify-items: center;
+    /* box-shadow: var(--shadow-of-container-yellow); */
+}
+
+.instr-h3 {
+    grid-row: 1/2;
+    align-self: center;
+}
+
+.instr-p {
+    align-self: self-start;
+    grid-row: 2/6;
+}
+
+.section1 p, .section1 h3 {
+    grid-column: 2/3;
+}
+.section2 p, .section2 h3 {
+    grid-column: 4/5;
+}
+
+.instr-img1 {
+    grid-column: 4/5;
+    grid-row: 1/6;
+}
+
+.instr-img2 {
+    grid-column: 2/3;
+    grid-row: 1/6;
+}
+
+/*| More than just a thrill part |*/
+
+.thrill-container {
+    max-height: 500px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+#img-s {
+    grid-column: 2/6;
+    grid-row: 2/-2;
+}
+
+#img-s img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    box-shadow: var(--shadow-of-container);
+}
+
+.thrill-container {
+    background-color: var(--accent1-color-light);
+}
+
+#thrill-txt-container {
+    background-color: var(--accent1-color);
+    padding: 1rem 2rem;
+    grid-column: 5/9;
+    grid-row: 3/6;
+    text-align: center;
+    /* box-shadow: 1px 2px 6px var(--accent1-color); */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #034286;
+}
+
+#thrill-txt-container button{
+    margin-top: .3rem;
+}
+
+/*|| Trips Page CSS ||*/
+
+/*| Hero banner of Trips |*/
+.experience-type, .trips-type h2 {
+    text-transform: uppercase;
+}
+
+.experience-type {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* trips main */
+#main-part2 {
+    margin: 0 3rem;
+}
+
+/* Button */
+#trips-hero-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+    z-index: 7;
+}
+
+/* intro section */
+#intro-sec {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+#intro-sec p {
+    text-align: left;
+}
+
+
+/* Sections of the different types of trips */
+.trips-sections {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    justify-self: center;
+}
+
+.trips-type {
+    /* border: 1px solid black; */
+    padding: 0 0 1rem 0;
+    display: grid;
+    grid-template-rows: 220px 2rem 2rem 200px auto;
+    gap: 0.4rem;
+    box-shadow: var(--shadow-of-container-type2);
+}
+
+.trips-type:first-child {
+    background-color: var(--accent2-color);
+}
+
+.experience-type, .trips-type h2, .trips-type ul, .trips-type p {
+    margin: 0 1.5rem;
+}
+
+.trips-type:first-child p, .trips-type:first-child h2, .trips-type:first-child li {
+    color: white;
+}
+
+.trips-type:first-child .experience-type {
+    color: white;
+}
+
+.trips-type:not(:first-child) .experience-type {
+    color: var(--accent2-color);
+}
+
+.trips-type:not(:first-child) p {
+    color: black;
+}
+
+.trips-type:not(:first-child) h2 {
+    color: rgb(0, 0, 0);
+}
+
+.trips-type ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.trips-type button {
+    max-width: 150px;
+    align-self: center;
+    justify-self: left;
+    margin-left: 1.5rem;
+}
+
+.trips-type:first-child button {
+    background-color: var(--bg-color-yellow);
+    color: var(--secondary-color);
+}
+
+.trips-type-img-container {
+    height: 200px;
+}
+
+.trips-type-img-container img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.trips-type ul>li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li>img {
+    display: inline-block;
+    width: 1.5rem;
+    padding: 0;
+    margin: 0 .3rem 0 0;
 }
