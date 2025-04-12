@@ -648,6 +648,10 @@ button:hover {
     text-transform: uppercase;
 }
 
+.trips-type h2 {
+    font-size: 23px;
+}
+
 .experience-type {
     font-size: 0.9rem;
     font-weight: 700;
@@ -677,7 +681,7 @@ button:hover {
 }
 
 #intro-sec p {
-    text-align: left;
+    text-align: center;
 }
 
 
