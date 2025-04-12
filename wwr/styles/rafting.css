@@ -727,6 +727,10 @@ button:hover {
     color: black;
 }
 
+.trips-type p {
+    text-align: left;
+}
+
 .trips-type:not(:first-child) h2 {
     color: rgb(0, 0, 0);
 }
